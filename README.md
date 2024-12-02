@@ -1,1 +1,0 @@
-# krittipatphommgam008.github.io
