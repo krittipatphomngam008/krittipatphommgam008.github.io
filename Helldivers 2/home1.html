@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="th"> <!-- กำหนดภาษาเป็นภาษาไทย -->
+<head>
+    <meta charset="UTF-8"> <!-- กำหนดการเข้ารหัสเป็น UTF-8 รองรับอักขระพิเศษและภาษาไทย -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ตั้งค่าให้หน้าเว็บรองรับการแสดงผลที่เหมาะสมกับอุปกรณ์ต่างๆ -->
+    <title>TRAILER GAME</title> <!-- ชื่อที่จะแสดงในแท็บของเบราว์เซอร์ -->
+    <style>
+        /* เริ่มต้น CSS */
+        body {
+            margin: 0; /* กำหนดให้ไม่มีระยะขอบ (margin) รอบตัวหน้าเว็บ */
+            font-family: 'Arial', sans-serif; /* กำหนดฟอนต์เป็น Arial */
+            background: url("../hd2/1.jpg") no-repeat center center/cover; /* ตั้งภาพพื้นหลัง */
+            height: 100vh; /* กำหนดความสูงของหน้าเว็บให้เต็มหน้าจอ */
+            background-attachment: fixed; /* ตั้งค่าภาพพื้นหลังให้ไม่เลื่อนตามเมื่อเลื่อนหน้า */
+            display: flex; /* ใช้ Flexbox เพื่อจัดตำแหน่งเนื้อหา */
+            justify-content: center; /* จัดตำแหน่งเนื้อหาให้อยู่กลางในแนวนอน */
+            align-items: center; /* จัดตำแหน่งเนื้อหาให้อยู่กลางในแนวตั้ง */
+            position: relative; /* ใช้ในการจัดตำแหน่งในโครงสร้าง */
+        }
+
+        .content {
+            text-align: center; /* ตั้งค่าการจัดตำแหน่งข้อความให้เป็นกลาง */
+            padding: 30px; /* เพิ่มพื้นที่ภายใน */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เพิ่มเงาลดหลั่นรอบๆ */
+            border-radius: 8px; /* ทำมุมของกรอบเนื้อหาให้โค้งมน */
+        }
+
+        .content img {
+            width: 500px; /* กำหนดความกว้างของรูปภาพ */
+            height: auto; /* ปรับความสูงของรูปภาพอัตโนมัติตามสัดส่วน */
+            margin-bottom: 20px; /* เพิ่มระยะห่างด้านล่างของรูปภาพ */
+        }
+
+        p {
+            color: #ffffff; /* กำหนดสีข้อความเป็นสีขาว */
+            font-size: 60px; /* กำหนดขนาดฟอนต์ของข้อความ */
+            margin: 0; /* ลบระยะขอบ (margin) ของข้อความ */
+        }
+
+        /* กำหนดสไตล์ของแถบเมนู */
+        .navbar {
+            position: fixed; /* ทำให้แถบเมนูติดกับด้านบนของหน้าจอ */
+            top: 0; /* ตั้งค่าตำแหน่งแนวตั้งของแถบเมนู */
+            right: 0; /* ตั้งค่าตำแหน่งแนวนอนของแถบเมนู */
+            background: url("../hd2/1.jpg") no-repeat center center/cover; /* ตั้งภาพพื้นหลังของแถบเมนู */
+            padding: 10px 20px; /* เพิ่มพื้นที่ภายในแถบเมนู */
+            z-index: 10; /* กำหนดลำดับการแสดงผลให้แถบเมนูอยู่บนสุด */
+        }
+
+        .navbar a {
+            color: white; /* กำหนดสีของลิงก์ในแถบเมนูเป็นสีขาว */
+            text-decoration: none; /* ลบเส้นขีดใต้ของลิงก์ */
+            margin-left: 20px; /* เพิ่มระยะห่างระหว่างลิงก์ */
+            font-size: 18px; /* กำหนดขนาดฟอนต์ของลิงก์ */
+            transition: color 0.3s; /* เพิ่มการเปลี่ยนแปลงสีเมื่อโฮเวอร์ */
+        }
+
+        .navbar a:hover {
+            color: #90ee90; /* เปลี่ยนสีลิงก์เมื่อโฮเวอร์เป็นสีเขียวอ่อน */
+        }
+        /* จบการตั้งค่า CSS */
+    </style>
+</head>
+<body>
+    <!-- เมนู Navbar -->
+    <div class="navbar">
+        <a href="home.html">Home</a> <!-- ลิงก์ไปยังหน้า Home -->
+        <a href="game.html">Game</a> <!-- ลิงก์ไปยังหน้า Game -->
+        <a href="Trailer game.html">Trailer game</a> <!-- ลิงก์ไปยังหน้า Trailer game -->
+    </div>
+
+    <!-- เนื้อหาหลักของหน้า -->
+    <div class="content">
+        <img src="../hd2/2.jpg" alt="image"> <!-- เพิ่มรูปภาพที่แสดงในหน้าเว็บ -->
+        <p>TRAILER GAME<br>https://youtu.be/RDhaY8T9fyw?si=VZRY-LzliT3PR1bY</p> <!-- ข้อความแสดงลิงก์ไปยัง Trailer ของเกม -->
+    </div>
+
+</body>
+</html>
